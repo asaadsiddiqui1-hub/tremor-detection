@@ -1,0 +1,30 @@
+{
+  "model_file": "stress_classifier.pkl",
+  "encoder_file": "stress_label_encoder.pkl",
+  "feature_names": [
+    "rmssd",
+    "sdnn",
+    "pnn50",
+    "mean_rr",
+    "std_rr",
+    "hr_bpm",
+    "lf_hf_ratio",
+    "cv_rr"
+  ],
+  "classes": [
+    "baseline",
+    "relaxed",
+    "stress"
+  ],
+  "data_source": "synthetic_clinical_norms",
+  "cv_accuracy": 0.9056,
+  "cv_method": "GroupKFold (leave-subjects-out)",
+  "test_accuracy": 0.9259,
+  "test_method": "held-out subjects (12\u201314)",
+  "ppg_fs_hz": 64,
+  "window_seconds": 60,
+  "n_estimators": 200,
+  "max_depth": 6,
+  "min_samples_leaf": 10,
+  "description": "HRV Random Forest stress classifier \u2014 regularised, subject-aware evaluation"
+}

@@ -1,0 +1,59 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+
+# Large Datasets & Binary archives (>100MB / raw sensor records)
+FallAllD/
+archive/
+x_val_3/
+*.zip
+*.tar.gz
+*.7z
+*.rar
+
+# SisFall raw array files (>100MB)
+neuropath_notebooks/neuropath/data/sisfall/x_train_3
+neuropath_notebooks/neuropath/data/sisfall/x_val_3
+neuropath_notebooks/neuropath/data/sisfall/x_test_3
+neuropath_notebooks/neuropath/data/sisfall/y_train_3
+neuropath_notebooks/neuropath/data/sisfall/y_val_3
+neuropath_notebooks/neuropath/data/sisfall/y_test_3
+neuropath_notebooks/neuropath/data/sisfall/weights_3.txt
+
+# WESAD full dataset
+neuropath_notebooks/neuropath/data/WESAD/
+
+# Build artifacts
+dist/
+dist-ssr/
+build/
+*.egg-info/
+
+# Environment and local configs
+.env
+.env.local
+.env.*.local
+
+# IDEs & System files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Temporary files
+tmp_debug.py

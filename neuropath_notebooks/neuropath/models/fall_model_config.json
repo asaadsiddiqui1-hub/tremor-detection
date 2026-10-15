@@ -1,0 +1,18 @@
+{
+  "model_file": "fall_detection_cnn.h5",
+  "window_size": 512,
+  "input_shape": [
+    512,
+    1
+  ],
+  "threshold": 0.65,
+  "classes": {
+    "0": "Normal",
+    "1": "Fall"
+  },
+  "sampling_rate_hz": 50,
+  "window_seconds": 10.24,
+  "val_auc": 0.9967,
+  "roc_auc_test": 0.9955,
+  "description": "1D-CNN binary classifier trained on SisFall Enhanced dataset"
+}

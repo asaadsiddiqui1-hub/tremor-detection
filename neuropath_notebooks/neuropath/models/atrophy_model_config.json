@@ -1,0 +1,16 @@
+{
+  "model_file": "atrophy_regressor.pkl",
+  "scaler_file": "atrophy_scaler.pkl",
+  "feature_names": [
+    "spatial_variance",
+    "resting_hr",
+    "hr_variability",
+    "immobilised_days",
+    "age",
+    "activity_level"
+  ],
+  "output": "atrophy_percentage_0_to_25",
+  "mae_test": 0.435,
+  "r2_test": 0.9617,
+  "description": "Gradient Boosting regressor for muscle atrophy prediction"
+}

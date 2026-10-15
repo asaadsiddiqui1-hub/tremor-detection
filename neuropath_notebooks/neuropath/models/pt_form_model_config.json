@@ -1,0 +1,25 @@
+{
+  "model_file": "pt_form_lstm.h5",
+  "scaler_file": "pt_form_scaler.pkl",
+  "classes": [
+    "correct",
+    "overextension",
+    "insufficient_range",
+    "wrong_plane"
+  ],
+  "n_classes": 4,
+  "seq_len": 100,
+  "n_features": 6,
+  "features": [
+    "accel_x",
+    "accel_y",
+    "accel_z",
+    "gyro_x",
+    "gyro_y",
+    "gyro_z"
+  ],
+  "sampling_hz": 50,
+  "window_seconds": 2,
+  "test_accuracy": 1.0,
+  "description": "LSTM PT form classifier"
+}

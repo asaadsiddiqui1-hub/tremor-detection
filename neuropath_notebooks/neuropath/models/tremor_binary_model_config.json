@@ -1,0 +1,34 @@
+{
+  "model_file": "tremor_binary_classifier.pkl",
+  "scaler_file": "tremor_binary_scaler.pkl",
+  "encoder_file": "tremor_binary_label_encoder.pkl",
+  "model_type": "RandomForest",
+  "feature_names": [
+    "dominant_freq",
+    "peak_magnitude",
+    "power_0_3hz",
+    "power_3_6hz",
+    "power_6_12hz",
+    "power_12plus",
+    "ratio_parkinson",
+    "ratio_essential",
+    "mean",
+    "std",
+    "rms",
+    "max_abs",
+    "skewness",
+    "kurtosis",
+    "jerk_mean"
+  ],
+  "classes": [
+    0,
+    1
+  ],
+  "window_size": 100,
+  "sampling_hz": 50,
+  "cv_bal_accuracy": 0.8534,
+  "test_accuracy": 0.9892,
+  "normal_windows": 1754,
+  "tremor_windows": 89,
+  "description": "Binary tremor classifier: normal vs tremor (real recorded data)"
+}

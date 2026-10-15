@@ -1,0 +1,23 @@
+{
+  "model_type": "IsolationForest",
+  "classes": [
+    "normal",
+    "fall"
+  ],
+  "feature_names": [
+    "mean_mag",
+    "std_mag",
+    "min_mag",
+    "max_mag",
+    "range_mag",
+    "ac_energy_mag",
+    "zcr_mag"
+  ],
+  "window_size": 100,
+  "stride": 50,
+  "sampling_hz": 50,
+  "threshold": -0.05,
+  "contamination": 0.05,
+  "normal_false_positive_rate": 0.05698005698005698,
+  "note": "IsoForest trained on glove normal data only; score < threshold = FALL"
+}

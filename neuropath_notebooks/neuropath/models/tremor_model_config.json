@@ -1,0 +1,39 @@
+{
+  "model_file": "tremor_classifier.pkl",
+  "scaler_file": "tremor_scaler.pkl",
+  "encoder_file": "tremor_label_encoder.pkl",
+  "model_type": "RandomForest",
+  "feature_names": [
+    "dominant_freq",
+    "peak_magnitude",
+    "power_0_3hz",
+    "power_3_6hz",
+    "power_6_12hz",
+    "power_12plus",
+    "ratio_parkinson",
+    "ratio_essential",
+    "mean",
+    "std",
+    "rms",
+    "max_abs",
+    "skewness",
+    "kurtosis",
+    "jerk_mean"
+  ],
+  "class_ids": [
+    1,
+    2,
+    3
+  ],
+  "class_names": [
+    "mild",
+    "moderate",
+    "high"
+  ],
+  "sampling_rate_hz": 50,
+  "window_size": 100,
+  "feature_axis": "dominant_accel_axis",
+  "cv_accuracy": 0.9363,
+  "test_accuracy": 1.0,
+  "description": "Tremor severity (mild/moderate/high) RandomForest on FFT features"
+}
